@@ -5,17 +5,15 @@ using UnityEngine;
 
 public class Note : MonoBehaviour
 {
-    private int NoteID;
-    private float Time;
-    private string NotePitch;
-    private string NoteType;
+    private int NoteIndex;
+    private float NoteTime;
+    private int NoteType;
     private string NoteExtra;
 
-    public Note(int noteID, float time, string notePitch, string noteType, string noteExtra)
+    public Note(int noteIndex, float noteTime, int noteType, string noteExtra)
     {
-        NoteID = noteID;
-        Time = time;
-        NotePitch = notePitch;
+        NoteIndex = noteIndex;
+        NoteTime = noteTime;
         NoteType = noteType;
         NoteExtra = noteExtra;
     }
